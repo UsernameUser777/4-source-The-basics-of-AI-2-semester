@@ -1,0 +1,81 @@
+2026-03-02 19:25:03,907 - RiskAnalysisApp - ERROR - Ошибка в plot_probability_distribution: '(0.12156862745098039, 0.4666666666666667, 0.7058823529411765)-' is not a valid format string (unrecognized character '(')
+2026-03-02 19:25:38,125 - RiskAnalysisApp - INFO - График сохранён: figure.png
+2026-03-02 19:25:41,582 - RiskAnalysisApp - INFO - График сохранён: figure.png
+2026-03-02 19:26:54,902 - RiskAnalysisApp - WARNING - matplotlib_venn не установлен. Используется упрощённая диаграмма.
+2026-03-02 19:28:18,180 - RiskAnalysisApp - ERROR - Ошибка в plot_probability_distribution: '(0.12156862745098039, 0.4666666666666667, 0.7058823529411765)-' is not a valid format string (unrecognized character '(')
+2026-03-02 19:49:50,445 - RiskAnalysisApp - ERROR - Ошибка в plot_probability_distribution: '(0.12156862745098039, 0.4666666666666667, 0.7058823529411765)-' is not a valid format string (unrecognized character '(')
+2026-03-02 19:50:04,641 - RiskAnalysisApp - ERROR - Ошибка в plot_probability_distribution: '(0.12156862745098039, 0.4666666666666667, 0.7058823529411765)-' is not a valid format string (unrecognized character '(')
+2026-03-02 19:50:49,644 - RiskAnalysisApp - WARNING - matplotlib_venn не установлен. Используется упрощённая диаграмма.
+2026-03-02 20:00:48,548 - RiskAnalysisApp - ERROR - Ошибка в plot_probability_distribution: '(0.12156862745098039, 0.4666666666666667, 0.7058823529411765)-' is not a valid format string (unrecognized character '(')
+2026-03-02 20:01:46,573 - RiskAnalysisApp - WARNING - matplotlib_venn не установлен. Используется упрощённая диаграмма.
+2026-03-02 20:16:52,016 - RiskAnalysisApp - ERROR - Ошибка в plot_probability_distribution: '(0.12156862745098039, 0.4666666666666667, 0.7058823529411765)-' is not a valid format string (unrecognized character '(')
+2026-03-02 20:17:30,047 - RiskAnalysisApp - WARNING - matplotlib_venn не установлен. Используется упрощённая диаграмма.
+2026-03-03 01:25:53,665 - RiskAnalysisApp - ERROR - Ошибка в plot_probability_distribution: '(0.12156862745098039, 0.4666666666666667, 0.7058823529411765)-' is not a valid format string (unrecognized character '(')
+2026-03-03 01:26:06,971 - RiskAnalysisApp - ERROR - Ошибка в plot_probability_distribution: '(0.12156862745098039, 0.4666666666666667, 0.7058823529411765)-' is not a valid format string (unrecognized character '(')
+2026-03-03 01:48:04,419 - RiskAnalysisApp - ERROR - Ошибка в plot_probability_distribution: '(0.12156862745098039, 0.4666666666666667, 0.7058823529411765)-' is not a valid format string (unrecognized character '(')
+2026-03-03 01:48:04,519 - RiskAnalysisApp - ERROR - Traceback (most recent call last):
+  File "C:\Users\stani\PycharmProjects\Lab 6 (Kolosov S.V.) (2026)\visualization.py", line 156, in plot_probability_distribution
+    ax.stem(outcomes, probs,
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+            linefmt=f'{colors[i]}-',
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+            markerfmt=f'{colors[i]}o',
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+            basefmt="",
+            ^^^^^^^^^^^
+            label=f'{opt.get("name", f"Опция {i + 1}")} (EV={ev:.2f})')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\stani\PycharmProjects\Lab 6 (Kolosov S.V.) (2026)\.venv\Lib\site-packages\matplotlib\__init__.py", line 1524, in inner
+    return func(
+        ax,
+        *map(cbook.sanitize_sequence, args),
+        **{k: cbook.sanitize_sequence(v) for k, v in kwargs.items()})
+  File "C:\Users\stani\PycharmProjects\Lab 6 (Kolosov S.V.) (2026)\.venv\Lib\site-packages\matplotlib\axes\_axes.py", line 3180, in stem
+    linestyle, linemarker, linecolor = _process_plot_format(linefmt)
+                                       ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\stani\PycharmProjects\Lab 6 (Kolosov S.V.) (2026)\.venv\Lib\site-packages\matplotlib\axes\_base.py", line 192, in _process_plot_format
+    raise ValueError(errfmt.format(fmt, f"unrecognized character {c!r}"))
+ValueError: '(0.12156862745098039, 0.4666666666666667, 0.7058823529411765)-' is not a valid format string (unrecognized character '(')
+
+2026-03-03 01:49:06,645 - RiskAnalysisApp - WARNING - matplotlib_venn не установлен. Используется упрощённая диаграмма.
+2026-03-03 15:31:02,236 - RiskAnalysisApp - ERROR - Ошибка в plot_probability_distribution: '(0.12156862745098039, 0.4666666666666667, 0.7058823529411765)-' is not a valid format string (unrecognized character '(')
+2026-03-03 15:31:02,322 - RiskAnalysisApp - ERROR - Traceback (most recent call last):
+  File "C:\Users\stani\PycharmProjects\Lab 6 (Kolosov S.V.) (2026)\visualization.py", line 155, in plot_probability_distribution
+    ax.stem(outcomes, probs, linefmt=f'{colors[i]}-', markerfmt=f'{colors[i]}o',
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            basefmt="", label=f'{opt.get("name", f"Опция {i + 1}")} (EV={ev:.2f})')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\stani\PycharmProjects\Lab 6 (Kolosov S.V.) (2026)\.venv\Lib\site-packages\matplotlib\__init__.py", line 1524, in inner
+    return func(
+        ax,
+        *map(cbook.sanitize_sequence, args),
+        **{k: cbook.sanitize_sequence(v) for k, v in kwargs.items()})
+  File "C:\Users\stani\PycharmProjects\Lab 6 (Kolosov S.V.) (2026)\.venv\Lib\site-packages\matplotlib\axes\_axes.py", line 3180, in stem
+    linestyle, linemarker, linecolor = _process_plot_format(linefmt)
+                                       ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\stani\PycharmProjects\Lab 6 (Kolosov S.V.) (2026)\.venv\Lib\site-packages\matplotlib\axes\_base.py", line 192, in _process_plot_format
+    raise ValueError(errfmt.format(fmt, f"unrecognized character {c!r}"))
+ValueError: '(0.12156862745098039, 0.4666666666666667, 0.7058823529411765)-' is not a valid format string (unrecognized character '(')
+
+2026-03-03 15:31:09,939 - RiskAnalysisApp - INFO - График сохранён: figure.png
+2026-03-03 15:32:13,433 - RiskAnalysisApp - WARNING - matplotlib_venn не установлен. Используется упрощённая диаграмма.
+2026-03-03 20:24:41,649 - RiskAnalysisApp - ERROR - Ошибка в plot_probability_distribution: '(0.12156862745098039, 0.4666666666666667, 0.7058823529411765)-' is not a valid format string (unrecognized character '(')
+2026-03-03 20:24:41,657 - RiskAnalysisApp - ERROR - Traceback (most recent call last):
+  File "C:\Users\stani\PycharmProjects\Lab 6 (Kolosov S.V.) (russian) (2026)\visualization.py", line 155, in plot_probability_distribution
+    ax.stem(outcomes, probs, linefmt=f'{colors[i]}-', markerfmt=f'{colors[i]}o',
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            basefmt="", label=f'{opt.get("name", f"Опция {i + 1}")} (EV={ev:.2f})')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\stani\PycharmProjects\Lab 6 (Kolosov S.V.) (russian) (2026)\.venv\Lib\site-packages\matplotlib\__init__.py", line 1524, in inner
+    return func(
+        ax,
+        *map(cbook.sanitize_sequence, args),
+        **{k: cbook.sanitize_sequence(v) for k, v in kwargs.items()})
+  File "C:\Users\stani\PycharmProjects\Lab 6 (Kolosov S.V.) (russian) (2026)\.venv\Lib\site-packages\matplotlib\axes\_axes.py", line 3180, in stem
+    linestyle, linemarker, linecolor = _process_plot_format(linefmt)
+                                       ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\stani\PycharmProjects\Lab 6 (Kolosov S.V.) (russian) (2026)\.venv\Lib\site-packages\matplotlib\axes\_base.py", line 192, in _process_plot_format
+    raise ValueError(errfmt.format(fmt, f"unrecognized character {c!r}"))
+ValueError: '(0.12156862745098039, 0.4666666666666667, 0.7058823529411765)-' is not a valid format string (unrecognized character '(')
+
+2026-03-03 20:25:01,515 - RiskAnalysisApp - WARNING - matplotlib_venn не установлен. Используется упрощённая диаграмма.
