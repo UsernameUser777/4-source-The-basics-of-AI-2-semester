@@ -1,0 +1,30 @@
+# Laboratory Work #7, Variant #1
+
+# Fundamentals of Artificial Intelligence
+
+# Author: Stanislav Kolosov, 4th year, IVT-3
+
+# Year: 2026
+
+# Project: Decision Support and Consistency Analysis of Expert Evaluations
+
+# Core libraries for computation and analysis
+
+numpy==1.26.4
+pandas==2.2.2
+matplotlib==3.8.4
+scipy==1.13.1
+
+# Libraries for document handling and export
+
+openpyxl==3.1.2
+python-docx==1.1.0
+reportlab==4.0.0
+
+# Note:
+
+# tkinter is part of the Python standard library and does not require installation via pip
+
+# To install all dependencies, use the command:
+
+# pip install -r requirements.txt
