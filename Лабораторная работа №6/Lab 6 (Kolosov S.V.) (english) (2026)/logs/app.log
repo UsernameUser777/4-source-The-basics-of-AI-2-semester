@@ -1,0 +1,39 @@
+2026-03-05 15:18:05,074 - RiskAnalysisApp - ERROR - Error in plot_probability_distribution: '(0.12156862745098039, 0.4666666666666667, 0.7058823529411765)-' is not a valid format string (unrecognized character '(')
+2026-03-05 15:18:05,185 - RiskAnalysisApp - ERROR - Traceback (most recent call last):
+  File "C:\Users\stani\PycharmProjects\Lab 6 (Kolosov S.V.) (english) (2026)\visualization.py", line 150, in plot_probability_distribution
+    ax.stem(outcomes, probs, linefmt=f'{colors[i]}-', markerfmt=f'{colors[i]}o',
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            basefmt="", label=f'{opt.get("name", f"Option {i + 1}")} (EV={ev:.2f})')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\stani\PycharmProjects\Lab 6 (Kolosov S.V.) (english) (2026)\.venv\Lib\site-packages\matplotlib\__init__.py", line 1524, in inner
+    return func(
+        ax,
+        *map(cbook.sanitize_sequence, args),
+        **{k: cbook.sanitize_sequence(v) for k, v in kwargs.items()})
+  File "C:\Users\stani\PycharmProjects\Lab 6 (Kolosov S.V.) (english) (2026)\.venv\Lib\site-packages\matplotlib\axes\_axes.py", line 3180, in stem
+    linestyle, linemarker, linecolor = _process_plot_format(linefmt)
+                                       ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\stani\PycharmProjects\Lab 6 (Kolosov S.V.) (english) (2026)\.venv\Lib\site-packages\matplotlib\axes\_base.py", line 192, in _process_plot_format
+    raise ValueError(errfmt.format(fmt, f"unrecognized character {c!r}"))
+ValueError: '(0.12156862745098039, 0.4666666666666667, 0.7058823529411765)-' is not a valid format string (unrecognized character '(')
+
+2026-03-05 15:18:40,050 - RiskAnalysisApp - WARNING - matplotlib_venn not installed. Using simplified diagram.
+2026-03-05 17:38:47,326 - RiskAnalysisApp - ERROR - Error in plot_probability_distribution: '(0.12156862745098039, 0.4666666666666667, 0.7058823529411765)-' is not a valid format string (unrecognized character '(')
+2026-03-05 17:38:47,334 - RiskAnalysisApp - ERROR - Traceback (most recent call last):
+  File "C:\Users\stani\PycharmProjects\Lab 6 (Kolosov S.V.) (english) (2026)\visualization.py", line 150, in plot_probability_distribution
+    ax.stem(outcomes, probs, linefmt=f'{colors[i]}-', markerfmt=f'{colors[i]}o',
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            basefmt="", label=f'{opt.get("name", f"Option {i + 1}")} (EV={ev:.2f})')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\stani\PycharmProjects\Lab 6 (Kolosov S.V.) (english) (2026)\.venv\Lib\site-packages\matplotlib\__init__.py", line 1524, in inner
+    return func(
+        ax,
+        *map(cbook.sanitize_sequence, args),
+        **{k: cbook.sanitize_sequence(v) for k, v in kwargs.items()})
+  File "C:\Users\stani\PycharmProjects\Lab 6 (Kolosov S.V.) (english) (2026)\.venv\Lib\site-packages\matplotlib\axes\_axes.py", line 3180, in stem
+    linestyle, linemarker, linecolor = _process_plot_format(linefmt)
+                                       ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\stani\PycharmProjects\Lab 6 (Kolosov S.V.) (english) (2026)\.venv\Lib\site-packages\matplotlib\axes\_base.py", line 192, in _process_plot_format
+    raise ValueError(errfmt.format(fmt, f"unrecognized character {c!r}"))
+ValueError: '(0.12156862745098039, 0.4666666666666667, 0.7058823529411765)-' is not a valid format string (unrecognized character '(')
+

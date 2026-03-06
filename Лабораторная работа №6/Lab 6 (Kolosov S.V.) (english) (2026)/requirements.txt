@@ -1,0 +1,30 @@
+# Author: Kolosov S.V., IVT-3, 4th year
+# Lab work №6, variant №1, 2026
+# Project dependencies for risk analysis and decision making
+
+# Core libraries for numerical computations
+numpy>=1.21.0
+pandas>=1.5.0
+
+# Visualization libraries
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Scientific computing and statistics
+scipy>=1.9.0
+
+# PDF report generation
+fpdf2>=2.7.0
+
+# Excel file handling
+openpyxl>=3.0.0
+
+# Venn diagrams
+matplotlib-venn>=0.11.9
+
+# Additional dependencies (optional)
+# tkinter - usually included in the Python standard library
+# logging - included in the Python standard library
+# json - included in the Python standard library
+# os - included in the Python standard library
+# typing - included in the Python standard library
