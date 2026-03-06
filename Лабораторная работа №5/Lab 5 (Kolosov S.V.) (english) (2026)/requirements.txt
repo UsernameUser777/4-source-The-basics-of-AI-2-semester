@@ -1,0 +1,7 @@
+# requirements.txt
+# Libraries for Laboratory Work #5 on the course "Fundamentals of AI"
+
+numpy>=1.24.0
+pandas>=1.5.0
+matplotlib>=3.7.0
+tkinter>=8.6  # Built into Python 3.13, no separate installation required
